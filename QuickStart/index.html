@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Qian Cheng" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>QuickStart - MRBIGR</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "QuickStart";
+        var mkdocs_page_input_path = "QuickStart.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> MRBIGR
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">QuickStart</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#installation-of-mrbigr">Installation of MRBIGR</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#1-download-and-install-mrbigr">1. Download and install MRBIGR</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#2-install-dependencies-and-configure-environment">2. Install dependencies and configure environment</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#usage-of-mrbigr">Usage of MRBIGR</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#1-genotype-data-process">1. Genotype data process</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#2-phenotype-data-process">2. Phenotype data process</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#3-gwas-and-qtl-detection">3. GWAS and QTL detection</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#4mendelian-randomization-related-analysis">4.Mendelian randomization related analysis</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#5mr-based-network-construction">5.MR-based network construction</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#6gene-ontology-analysis-of-network-modules">6.Gene ontology analysis of network modules</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Tutorial/">Tutorial</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">MRBIGR</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">QuickStart</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/CrazyHsu/MRBIGR/edit/master/docs/QuickStart.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="quickstart"><center>Quickstart</center></h1>
+<p><center>Installation and quickstart</center></p>
+<hr />
+<p>This section is mainly intended for the installation of MRBIGR and the briefly introduction of several typical usage of MRBIGR to help users get started quickly. Details and advanced usage of MRBIGR, please see <a href="../Tutorial/">Tutorial section</a></p>
+<h2 id="installation">Installation</h2>
+<hr />
+<h2 id="installation-of-mrbigr">Installation of MRBIGR</h2>
+<h3 id="1-download-and-install-mrbigr">1. Download and install MRBIGR <br/></h3>
+<p>1.2 Download MRBIGR </p>
+<pre><code class="language-bash">git clone https://github.com/liusy-jz/MRBIGR.git 
+</code></pre>
+<p>1.3 Activate a new conda environment</p>
+<pre><code class="language-bash">conda create -n mrbigr python=3.9 -y  
+conda activate mrbigr 
+</code></pre>
+<p>1.4 Build and install</p>
+<pre><code class="language-bash">cd MRBIGR  
+python setup.py build  
+python setup.py install  
+</code></pre>
+<h3 id="2-install-dependencies-and-configure-environment">2. Install dependencies and configure environment<br/></h3>
+<p>2.1 Install dependencies <br/></p>
+<pre><code class="language-bash">pip install pyranges  
+conda install -y -c conda-forge r-rcppeigen r-xml r-rsqlite r-europepmc r=3.6 rpy2  
+Rscript -e 'install.packages(c(&quot;data.table&quot;, &quot;ggplot2&quot;, &quot;ggsignif&quot;, &quot;ggrepel&quot;,&quot;Matrix&quot;, &quot;igraph&quot;, &quot;network&quot;, &quot;GGally&quot;, &quot;sna&quot;,  &quot;europepmc&quot;,&quot;ggraph&quot;), repos=&quot;https://cloud.r-project.org&quot;)'  
+Rscript -e 'if (!requireNamespace(&quot;BiocManager&quot;, quietly = TRUE)) install.packages(&quot;BiocManager&quot;, repos=&quot;https://cloud.r-project.org&quot;);BiocManager::install(c(&quot;AnnotationForge&quot;,&quot;clusterProfiler&quot;))  
+Rscript -e 'install.packages(&quot;bigsnpr&quot;, dependence=T, repos=&quot;https://cloud.r-project.org&quot;)'
+</code></pre>
+<p>2.2 Set environment variables</p>
+<pre><code class="language-bash">echo &quot;export PATH=`pwd`/utils:\$PATH&quot; &gt;&gt; ~/.bashrc  
+source ~/.bashrc
+</code></pre>
+<p><img alt="#f03c15" src="https://placehold.co/15x15/f03c15/f03c15.png" /> <strong>Depends</strong>: R(&gt;=3.6), python(&gt;=3.7)</p>
+<h2 id="usage-of-mrbigr">Usage of MRBIGR</h2>
+<p>MRBIGR consists of seven analysis modules: genotype based analysis module <code>geno</code>, phenotype based analysis module <code>pheno</code>, GWAS and QTL related analysis module <code>gwas</code>, Mendelian randomization ralated  analysis （three module：Mendelian randomization analysis module <code>mr</code>, MR-based network construction module <code>net</code> and gene ontology analysis module <code>go</code>） and data visulaization module <code>plot</code>. Each module can be invoked via a subcommand, and each module also provides several functions which can be called with corresponding parameters. In this part, only several commonly used functions in each module are shown as examples. For more detailed instructions, please refer to the <a href="../Tutorial/">Tutorial section</a>.</p>
+<h3 id="1-genotype-data-process">1. Genotype data process</h3>
+<p>Suppose we have a set of plink-bed format genotype data named <font color=blue>geno.bed/geno.bim/geno.fam</font>. First, quality control of the original genotype data should be performed through the below command:</p>
+<pre><code class="language-py">MRBIGR.py geno -qc -g geno -o geno_qc -maf 0.05 -mis 0.2 -mind 0.2  
+</code></pre>
+<p>The subcommand <code>geno</code> invokes the genotype analysis module; parameter <code>–qc</code> calls the quality control function; <code>–g</code> is the plink-bed format input genotype data; <code>-o</code> is the output genotype data prefix; <code>-maf</code> is the MAF for a SNP to be kept; <code>-mis</code> is the maximum proportion of missing values for a SNP to be kept; <code>-mind</code> is the maximum proportion of missing values for a sample to be kept. 
+<br/></p>
+<p>After this step, the QC-filtered genotype data <font color=blue>geno_qc.bed/geno_qc.bim/geno_qc.fam</font> would be generated. Then, dimensionality reduction of the original genotype data could be performed using the below command:</p>
+<pre><code class="language-py">MRBIGR.py geno -clump -g geno_qc -o geno  
+</code></pre>
+<p>The subcommand geno invokes the genotype analysis module; parameter <code>–clump</code> calls the genotype clumping function to keep only one representative SNP per region of LD; <code>–g</code> is the plink-bed format input genotype data, <code>-o</code> is the output genotype data prefix (<code>suffix _clump</code> will be added automatically for the output files). After this step, the clumped genotype data <font color=blue>geno_clump.bed/geno_clump.bim/geno_clump.fam</font> would be generated. Then, take the dimensional reduced genotype data as input to perform principal component analysis using the below command:</p>
+<pre><code class="language-py">MRBIGR.py geno -pca -g geno_clump -o geno  
+</code></pre>
+<p>The subcommand <code>geno</code> invokes the genotype analysis module; parameter <code>–pca</code> calls the principal component analysis function; <code>–g</code> is the plink-bed format input genotype data; <code>-o</code> is the output genotype data prefix (<code>suffix_pca</code> will be added automatically for the output files). After this step, an output file named <font color=blue>geno_pca.csv</font> would be generated in the working directory.</p>
+<h3 id="2-phenotype-data-process">2. Phenotype data process</h3>
+<p>Suppose we have a CSV format phenotype file named  <font color=blue>pheno.csv</font>, the first column and the first row should be the names of samples and traits, respectively. First, quality control of the original phenotype data should be performed through the below command:</p>
+<pre><code class="language-py">MRBIGR.py pheno –qc -p pheno.csv -o pheno_qc -mis 0.5 -val 0.1 –rout   
+</code></pre>
+<p>The subcommand <code>pheno</code> invokes the phenotype analysis module; parameter <code>–qc</code> calls the quality control function; <code>-p</code> is the input phenotype matrix; <code>-o</code> is the prefix of output file; <code>-mis</code> is the missing rate cutoff; <code>-val</code> is the small value cutoff; <code>-rout</code> means outlier removal of phenotypic values with the default method. After this step, a QC-filtered phenotype data named <font color=blue>pheno_qc.phe.csv</font> would be generated. Then, take this file as input, perform missing phenotypic value imputation through the below command: </p>
+<pre><code class="language-py">MRBIGR.py pheno –-imput -p pheno_qc.phe.csv -o pheno_imput  
+</code></pre>
+<p>The subcommand <code>pheno</code> invokes the phenotype analysis module; parameter <code>–imput</code> calls the phenotype imputation function; <code>-p</code> is the input phenotype matrix; <code>-o</code> is the prefix of output file. </p>
+<p>After this step, a phenotype file named <font color=blue>pheno_imput.phe.csv</font> with no NA value would be generated. Then, take this file as input to perform phenotypic value normalization using the below command:</p>
+<pre><code class="language-py">MRBIGR.py pheno –scale -p pheno_imput.phe.csv –o pheno_norm -boxcox -minmax  
+</code></pre>
+<p>The subcommand <code>pheno</code> invokes the phenotype analysis module; parameter <code>–scale</code> calls the phenotype scaling/normalization/standardization/transformation function; <code>-p</code> is the input phenotype matrix; <code>-o</code> is the prefix of output file, <code>-boxcox</code> and <code>-minmax</code> means perform both box-cox normalization and min-max scaling of the input data. After this step, a phenotype file named pheno_norm.phe.csv with normalized and scaled phenotypic values would be generated.</p>
+<p>In some cases, phenotype data are collected from different environment or years, which should be merged through appropriate algorithm such as mean-values or BLUP before further analysis. Here is an example, take one trait from different environment as input, the below command line will merge all the columns using BLUP algorithm:</p>
+<pre><code class="language-py">MRBIGR.py pheno -merge -p trait1.csv -o trait1_blup -mm blup  
+</code></pre>
+<p>The subcommand <code>pheno</code> invokes the phenotype analysis module; parameter <code>–merge</code> calls the phenotype merge function; <code>-p</code> is the input phenotype matrix for a trait in CSV format; <code>-o</code> is the prefix of output file; <code>-mm</code> is the merge method. After this step, a phenotype file named trait1_blup.phe.csv with BLUP merged phenotypic values would be generated.</p>
+<h3 id="3-gwas-and-qtl-detection">3. GWAS and QTL detection</h3>
+<p>Take the processed plink-bed format genotype data and CSV format phenotype data as inputs, GWAS can be performed through the below command:</p>
+<pre><code class="language-py">MRBIGR.py gwas -gwas -model lmm -thread 12 -g geno_qc -p pheno_norm.csv  
+</code></pre>
+<p>The subcommand <code>gwas</code> invokes the GWAS and QTL analysis module; parameter <code>–gwas</code> calls the GWAS function; <code>-model</code> is the model to fit, with linear mixed model (lmm) by default; <code>-thread</code> is the thread number to run the command; <code>-g</code> is the plink-bed format input genotype data; <code>-p</code> is the CSV format phenotype data. After this step, an output directory would be generated with the GWAS result files named <font color=blue>trait_name.assoc.txt</font> in it. Then, QTL can be determined using the below command based on the GWAS results:</p>
+<pre><code class="language-py">MRBIGR.py gwas -qtl -g geno_qc -thread 6 -i output -o qtl_output -p1 1e-5 -p2 1e-3 -p2n 5  
+</code></pre>
+<p>The subcommand gwas invokes the GWAS and QTL analysis module; parameter <code>–qtl</code> calls the QTL detection function; <code>-thread</code> is the thread number to run the command; <code>-i</code> is the GWAS result directory; <code>-o</code> is the output file prefix; <code>-p1</code> is the significance threshold for index SNPs used to determine QTLs; <code>-p2</code> is the secondary significance threshold for clumped SNPs used to determine the reliability of QTLs; <code>-p2n</code> is secondary significance SNP number in a QTL. After this step, an output file named <font color=blue>qtl_output.qtl_res.csv</font> would be generated. If you want to generate manhattan-plots and QQ-plots for visualization of the GWAS results, the below command should be helpful:</p>
+<pre><code class="language-py">MRBIGR.py gwas -visual -thread 12 -i output -o vis_output -multi -q qtl_output.qtl_res.csv   
+</code></pre>
+<p>The subcommand <code>gwas</code> invokes the GWAS and QTL analysis module; parameter <code>–visual</code> calls the visualization function; <code>-thread</code> is the thread number to run the command; <code>-i</code> is the GWAS result directory; <code>-o</code> is the output directory for the generated plots files; parameters <code>-multi</code> and <code>–q</code> are optional, if <code>–multi</code> is set to generate a multi-traits manhattan-plot, <code>–q</code> which is the QTL result file also need to be set.</p>
+<h3 id="4mendelian-randomization-related-analysis">4.Mendelian randomization related analysis</h3>
+<p>Take the plink-bed format genotype data, CSV format exposure data, CSV format exposure QTL data and CSV format outcome data as inputs, Mendelian randomization analysis can be performed through the below command:</p>
+<pre><code class="language-py">MRBIGR.py mr -g geno_qc -exposure exposure.csv -qtl exposure_qtl.csv -outcome outcome.csv -mlm -thread 12 -o mr_out  
+</code></pre>
+<p>The subcommand <code>mr</code> invokes the Mendelian randomization analysis module; parameter -exposure is the CSV format exposure data; -outcome is the CSV format outcome data; <code>-qtl</code> is the CSV format exposure QTL data; <code>-thread</code> is the thread number to run the command; <code>-g</code> is the plink-bed format input genotype data; <code>-mlm</code> represents perform Mendelian randomization analysis through mixed linear model; <code>-o</code> is the prefix of output file. After this step, a MR result file named mr_out.MR.csv would be generated.</p>
+<p>It also can take the CSV format population gene expression data and CSV format gene QTL data as inputs, pairwise genes Mendelian randomization analysis can be performed through the below command:</p>
+<pre><code class="language-py">MRBIGR.py mr -g geno_qc -gene_exp gene_exp.csv -pairwise -mlm -qtl gene_qtl.csv -thread 12  -o pairwise_mr_out  
+</code></pre>
+<p>The subcommand <code>mr</code> invokes the Mendelian randomization analysis module; parameter <code>-gene_exp</code> is the CSV format population gene expression data; <code>-qtl</code> is the CSV format gene QTL data; <code>-thread</code> is the thread number to run the command; <code>-g</code> is the plink-bed format input genotype data; <code>-mlm</code> represents perform Mendelian randomization analysis through mixed linear model; <code>-o</code> is the prefix of output file. After this step, a MR result file named <font color=blue>pairwise_mr_out.MR.csv</font> would be generated. If you want to perform Mendelian randomization analysis between transcription factor and genes it targets, the below command should be helpful:</p>
+<pre><code class="language-py">MRBIGR.py mr -g geno_qc -gene_exp gene_exp.csv -tf tf_genefunc.txt -target target_genefunc.txt -mlm -qtl tf_qtl.csv -threads 12 -o tf_mr_out  
+</code></pre>
+<p>The subcommand <code>mr</code> invokes the Mendelian randomization analysis module; parameter <code>-gene_exp</code> is the CSV format population gene expression data; <code>-qtl</code> is the CSV format transcription factor QTL data; <code>-tf</code> is the transcription factor annotation file; <code>-target</code> is the annotation files for genes targeted by transcription factors; <code>-thread</code> is the thread number to run the command; <code>-g</code> is the plink-bed format input genotype data; <code>-mlm</code> represents perform Mendelian randomization analysis through mixed linear model; <code>-o</code> is the prefix of output file. After this step, a MR result file named <font color=blue>tf_mr_out.MR.csv</font> would be generated.</p>
+<h3 id="5mr-based-network-construction">5.MR-based network construction</h3>
+<p>Take the CSV format Mendelian randomization analysis data as input, Mendelian randomization based network analysis can be performed through the below command:</p>
+<pre><code class="language-py">MRBIGR.py net -mr pairwise_mr_out.MR.csv -plot -o net_out  
+</code></pre>
+<p>The subcommand <code>net</code> invokes the Mendelian randomization based network analysis module; parameter <code>-mr</code> is the CSV format Mendelian randomization analysis data; <code>-plot</code> represents plot network for each identified network module; <code>-o</code> is the prefix of output file. After this step, network edgelist file <font color=blue>net_out.edge_list</font>, ClusterONE software result <font color=blue>net_out.clusterone.result.csv</font>, network module plot <font color=blue>net_out.module*.pdf</font> and final network module file <font color=blue>net_out.module.csv</font> would be generated.</p>
+<p><img alt="fig 2" src="../img/net.jpg" title="Visualization of interaction network" />  <center>Visualization of interaction network</center></p>
+<h3 id="6gene-ontology-analysis-of-network-modules">6.Gene ontology analysis of network modules</h3>
+<p>Take the CSV format network module data, Tabular format gene ontology annotation of each gene data and Tabular format gene annotation data as inputs, gene ontology enrichment analysis of each module can be performed through the below command:</p>
+<pre><code class="language-py">MRBIGR.py go -gene_lists net_out.module.csv -go_anno go_anno.txt -gene_info gene_anno.txt -o go_out  
+</code></pre>
+<p>The subcommand <code>go</code> invokes the gene ontology enrichment analysis module; parameter <code>-gene_lists</code> is the CSV format network module data; <code>-go</code> is the tabular format gene ontology annotation of each gene data; <code>-gene_info</code> is the tabular format gene annotation data; <code>-o</code> is the prefix of output file. After this step, gene ontology enrichment analysis result <font color=blue>go_out.GO.csv</font>, visualized results of functional enrichment results <font color=blue>go_out.BP.dotplot.pdf</font>, <font color=blue>go_out.MF.dotplot.pdf</font> and <font color=blue>go_out.CC.dotplot.pdf</font> would be generated.</p>
+<p><img alt="fig 3" src="../img/GO.jpg" title="Visulization of GO enrichment results" />  <center>Visulization of GO enrichment results</center></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Tutorial/" class="btn btn-neutral float-right" title="Tutorial">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/CrazyHsu/MRBIGR/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Tutorial/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
